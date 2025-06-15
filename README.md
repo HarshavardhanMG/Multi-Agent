@@ -1,7 +1,3 @@
-Of course. Based on the provided code and your detailed requirements, here is a comprehensive and professionally formatted README file.
-
-Modular Multi-Agent AI System
-
 ![alt text](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 A sophisticated multi-agent AI system designed to achieve complex user goals through a dynamic and modular chain of specialized agents. This system uses a Planner Agent to interpret a goal and route it through a sequence of enrichment agents (Research, Analysis, Synthesis), each progressively adding value to the data until a comprehensive final output is generated.
@@ -128,18 +124,19 @@ IGNORE_WHEN_COPYING_END
 Create Environment File
 Create a file named .env in the root of the project directory and add your API keys:
 
-# Get your key from Google AI Studio
-GOOGLE_API_KEY="your_google_api_key_here"
+# API Keys
+GOOGLE_API_KEY=
+OPENAI_API_KEY=
+OPENWEATHER_API_KEY=
 
-# Get your key from OpenWeatherMap
-OPENWEATHER_API_KEY="your_openweathermap_api_key_here"
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Env
-IGNORE_WHEN_COPYING_END
-Usage
+# Agent Configuration
+MAX_ITERATIONS=5
+CONFIDENCE_THRESHOLD=0.8
+
+# API Endpoints
+GOOGLE_AI_ENDPOINT=https://generativelanguage.googleapis.com/v1beta/models
+OPENWEATHER_API_ENDPOINT=https://api.openweathermap.org/data/2.5
+
 
 Run the system from the command line by providing a goal. The system will print the execution flow and the final results.
 
